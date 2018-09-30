@@ -17,6 +17,14 @@ function div(a,b) {
     return a / b;
 }
 
+function mod(a,b) {
+    if(b == 0) {
+        return new Error('zero divider error.');
+    }
+    return a % b;
+}
+
+
 function getE() {
     return Math.E;
 }
@@ -26,5 +34,6 @@ module.exports = {
     sub : sub,
     mul : mul,
     div : div,
+    mod : mod,
     getE : getE
 }

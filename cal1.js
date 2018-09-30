@@ -19,6 +19,13 @@ calc.div = function(a,b) {
     return a/b;
 }
 
+calc.mod = function(a,b) {
+    if(b == 0) {
+        return new Error('zero divider error.');
+    }
+    return a%b;
+}
+
 calc.gerE = function() {
     return Math.E;
 }
